@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root {
+
+    /* BASICS */
+
+    --mainfont: 'Poppins', sans-serif;
+    --mcolor1: #0738A4;
+    --mcolor2: #2305F8;
+    --mcolor3: #191919;
+    --mcolor4: #FFFFFF;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    font-family: var(--mainfont);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 105px;
+    padding: 0 0 10px 0;
+   
+
+}
+
+
+.logo {
+    height: 70px;
+    margin-top: 10px;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background: #10110eb2;
+}
+.links-container1 {
+    display: flex;
+   
+    justify-content: flex-start;
+    list-style: none;
+    background: #10110eb2;
+}
+
+.links-container a {
+
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--mcolor4);
+    transition: 500ms ease;
+    margin: 0 25px;
+
+}
+
+
+.dropdown {
+    list-style: none;
+}
+
+.dropdown li {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown li a {
+    color: var(--mcolor4);
+    display: block;
+    font-size: 17px;
+    padding: 15px 25px;
+    background-color: #04256bbe;
+}
+
+.dropdown li a:hover {
+    background-color: #04256b;
+}
+
+ul li ul.dropdown li {
+    display: block;
+}
+
+ul li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+
+.fback {
+    text-decoration: none;
+    color: var(--mcolor4);
+    padding: 20px 0;
+  
+    display: flex;
+    padding: 30px 0;
+    margin-left: 10px;
+    
+}
+
+
+/* SECTIONS */
+
+.test1 {
+    min-height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOOOOTERRRR */
+
+footer {
+    background-color: #10110e;
+    position: relative;
+    width: 100%;
+    min-height: 350px;
+   
+
+}
+
+.f-logo {
+    width: 100px;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 1rem;
+}
+
+#f-company {
+    text-align: justify;
+}
+
+#f-company h1 {
+    display: inline;
+    position: relative;
+    bottom: 40px;
+    left: 20px;
+    color: #ffffff;
+    font-family: var(--mainfont);
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+
+#f-company img {
+    display: inline;
+}
+
+#f-company p {
+    margin-bottom: 10px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.fcolumn {
+    min-width: 340px;
+    
+    color: var(--secondaryfont);
+    font-family: var(--mainfont);
+    padding: 0 0 0 25px;
+
+
+}
+
+
+
+
+.fcolumn h3 {
+    color: #ffffff;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 25px;
+
+}
+
+.fcolumn p {
+    color: #ffffff;
+}
+
+.fblock {
+    display: block;
+    cursor: default
+    f
+
+}
+
+
+
+
+.f-socials i {
+    font-size: 20px;
+    margin-left: 10px;
+    transition: 200ms ease;
+}
+
+.f-socials .social-links i:hover {
+    transform: scale(1.5);
+
+}
+
+footer a {
+    text-decoration: none;
+    list-style: none;
+    color: #ffffff;
+}
+
+.fs-links {
+width: 250px;
+}
+.fs-links a {
+    display: block;
+    position: relative;
+   width: 240px;
+}
+
+
+
+
+.fs-links a:hover::before {
+    opacity: 1;
+
+}
+
+.fs-links a:hover {
+    transform: translateX(-5px);
+    filter: grayscale(100%);
+    color: red;
+}
+
+.f-contacts p,
+.f-contacts i {
+    display: inline;
+}
+
+.f-loc {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.f-loc i {
+    margin: 0 10px 0 0;
+}
+
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+
+
+.stylernaline {
+    position: relative;
+    width: 117%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.stylernaline::after,
+.stylernaline::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #ffffff;
+    margin: auto;
+    width: 48%;
+    top: 45%;
+}
+
+.stylernaline::after {
+    left: 0;
+}
+
+.stylernaline::before {
+    right: 0;
+}
+
+.maydiamondsaloob {
+    display: flex;
+    align-items: center;
+
+    color: #ffffff;
+}
+
+.maydiamondsaloob img {
+    width: 45px;
+}
+
+.copyright {
+    font-family: var(--mainfont);
+    color: var(--mcolor3);
+    font-size: 15px;
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 800;
+}
+
+.cright {
+    display: block;
+    position: absolute;
+    background-color: rgb(201, 201, 201);
+    bottom: -40px;
+    width: 100%;
+
+}
+
+
+/* MEDIA QUERYS */
+@media(max-width:1378px){
+    .stylernaline {
+        width: 100%;
+    }
+    .fcolumn {
+        min-width: 300px;
+    }
+    .fs-links a {
+        font-size: 13px;
+    }
+   .fblock {
+    font-size:15px;
+   }
+
+   .maydiamondsaloob img {
+    width: 37px;
+   }
+}
+@media(max-width:1280px) {
+
+    /* FOOTER */
+    .footer-row {
+        flex-direction: column;
+
+    }
+
+    .fcolumn {
+        width: 80%;
+        text-align: center;
+        margin: 0 0 1rem 0;
+    }
+
+    .stylernaline {
+        width: 85%;
+    }
+
+    .maydiamondsaloob img {
+        width: 30px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .links-container {
+        margin: 25px 0;
+
+    }
+
+    ul li ul.dropdown {
+        text-align: center;
+        left: 25px;
+    }
+
+    .llogo {
+        display: none;
+    }
+}
+
+
+@media (max-width:768px) {
+
+    .links-container {
+        flex-direction: column;
+        margin: 0px 0;
+
+    }
+
+    .links-container a {
+        font-size: 17px;
+    }
+
+    nav {
+        height: 115px;
+    }
+
+}
+
+
+
+
+
+.fb-page {
+    margin: 12rem 2rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+/* TVET */
+
+.tvet-sec {
+    min-height: 100vh;
+    font-family: var(--mainfont);
+}
+
+.tvet-head {
+    margin-top: 8rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tvet-course {
+margin: 3.3rem 0 0 20px ;
+}
+
+.tvet-course  li {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+
+}
